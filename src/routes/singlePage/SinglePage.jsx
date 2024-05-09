@@ -4,6 +4,11 @@ import {singlePost, userData} from "../../lib/dummyData"
 import Pin from "../../assets/pin.png"
 import Map from "../../components/map/map"
 import Save from "../../assets/save.png"
+import Bed from "../../assets/bed1.png"
+import Bath from "../../assets/bath.png"
+import Utility from "../../assets/utility.png"
+import Pet from "../../assets/pet.png"
+
 function SinglePage(){
     return(
         <div className="singlePage">
@@ -36,10 +41,35 @@ function SinglePage(){
                 <div className="wrapper">
                 <p className="title">Basics</p>
                     <div className="listVertical">
-
+                    <div className="feature">
+                        <img src={Utility} alt="utility" width={50}/>
+                        <div className="featureText">
+                            <span>Utilities</span>
+                            <p>Owner is responsible</p>
+                        </div>
                     </div>
-                <p className="title">Sizes</p>
-                <div className="sizes"></div>
+                    <div className="feature">
+                        <img src={Pet} alt="pet" width={50}/>
+                        <div className="featureText">
+                            <span>Pet Policy</span>
+                            <p>Pets allowed</p>
+                        </div>
+                    </div>
+                    </div>
+                    <p className="title">Sizes</p>
+                <div className="sizes">
+                    <div className="size">
+                        <span>80sqft</span>
+                    </div>
+                    <div className="size">
+                        <img src={Bed} alt="" width={40} />
+                        <span>{singlePost.bedroom} room(s)</span>
+                    </div>
+                    <div className="size">
+                    <img src={Bath} alt="" width={40} />
+                        <span>{singlePost.bathroom} bath(s)</span>
+                    </div>
+                </div>
                 <p className="title">Vicinities</p>
                 <div className="listHorizontal">
 
