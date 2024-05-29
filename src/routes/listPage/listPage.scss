@@ -11,6 +11,11 @@
         gap: 50px;
         overflow-y: scroll;
         padding-bottom: 50px;
+        .loader{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
      }
     }
     .mapContainer{

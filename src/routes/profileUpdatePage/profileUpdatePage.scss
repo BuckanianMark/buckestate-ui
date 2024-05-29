@@ -1,0 +1,75 @@
+@import "../../responseive.scss";
+.profileUpdatePage{
+    display: flex;
+    .formContainer{
+        flex: 3;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        h1{
+            color: #444;
+
+        }
+        .wrapper{
+            padding: 50px;
+            width: 100%;
+            form{
+                background-color: #e8b7d4;
+                width: 100%;
+                padding:100px 50px ;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .item{
+                   
+                    margin-top: 20px;
+                    padding: 10px 8px; 
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    label{
+                        font-weight: bold;
+                    }
+                    input{
+                        outline: none;
+                        border: none;
+                        background-color: white;
+                        border: 1px solid #33549e;
+                        padding: 10px 15px;
+                        border-radius: 4px;
+                        border-left: none;
+                    }
+                }
+                button{
+                    margin-top: 10px;
+                    padding: 10px 25px;
+                    font-weight: bold;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #33549e;
+                    color: white;
+                    font-size: 17px;
+                    cursor: pointer;
+                }
+            }
+        }
+       
+
+    }
+    .sideContainer{
+        flex: 2;
+        background-color: #fcf5f3;
+        @include md{
+            display: none;
+        }
+        .wrapper{
+            padding-right:20px ;
+            padding-right:20px ;
+            img{
+                width: 100%;
+        }
+    }
+    }
+}

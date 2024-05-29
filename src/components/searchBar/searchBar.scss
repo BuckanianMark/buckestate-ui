@@ -53,17 +53,28 @@
             padding: 20px;
             border: 1px solid #A5678e;
         }
+ 
+        
+    }
+    .link{
+        border: none;
+        cursor: pointer; 
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #33549e;
         button{
             border: none;
-            cursor: pointer;
-            background-color: #A5678e;
-            padding: 0 4px;
+            outline: none;
+           background-color: transparent;
             @include sm{
                 padding: 10px;
             }
             
             img{
                 width: 30px;
+               
                 height: 30px;
                 cursor: pointer;
             }

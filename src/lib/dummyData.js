@@ -2,7 +2,7 @@ export const listData =[
     {
         id:1,
         title:"Rereta House Apartments",
-        img:"https://images.pexels.com/photos/19966808/pexels-photo-19966808/free-photo-of-spacious-kitchen-interior-with-white-furniture.jpeg?auto=compress&cs=tinysrgb&w=300",
+        images:["https://images.pexels.com/photos/19966808/pexels-photo-19966808/free-photo-of-spacious-kitchen-interior-with-white-furniture.jpeg?auto=compress&cs=tinysrgb&w=300"],
         bedroom:2,
         bathroom:1,
         price:40000,
@@ -13,7 +13,7 @@ export const listData =[
     {
         id:2,
         title:"shazit  Apartments",
-        img:"https://images.pexels.com/photos/19899086/pexels-photo-19899086/free-photo-of-rental-apartment-with-cushions-on-a-sofa.jpeg?auto=compress&cs=tinysrgb&w=300",
+        images:["https://images.pexels.com/photos/19899086/pexels-photo-19899086/free-photo-of-rental-apartment-with-cushions-on-a-sofa.jpeg?auto=compress&cs=tinysrgb&w=300"],
         bedroom:2,
         bathroom:1,
         price:50000,

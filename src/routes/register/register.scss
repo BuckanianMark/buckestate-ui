@@ -1,5 +1,5 @@
 @import "../../responseive.scss";
-.login{
+.register{
     display: flex;
     height: 100%;
     .left{
@@ -27,6 +27,7 @@
                 input{
                     outline: none;
                     border: none;
+                    background-color:white;
                 }
             }
             button{
@@ -49,10 +50,10 @@
                 font-weight: bold;
             }
             p{
-
                 font-size: 14px;
                 color: #444;
                 margin-top: 5px;
+                margin-bottom: 10px;
                 .link{
                     border-bottom: 1px solid #33549e;
                     font-weight: bold;

@@ -31,6 +31,7 @@
                     padding: 12px 24px;
                     background-color: #A5678e;
                     border: none;
+                    cursor: pointer;
                 }
             }
             .info{
@@ -41,6 +42,15 @@
                     display: flex;
                     align-items: center;
                     gap: 20px;
+                }
+                .logout{
+                    width: 100px;
+                    background-color: #33549e;
+                    border: none;
+                    color: white;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    border-radius: 5px;
                 }
                 img{
                     width: 40px;
