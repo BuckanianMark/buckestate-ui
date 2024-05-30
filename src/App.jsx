@@ -30,11 +30,7 @@ function App() {
             element:<ListPage />,
             loader:listPageLoader
           },
-          {
-            path:"/:id",
-            element:<SinglePage />,
-            loader:singlePageLoader
-          },
+          
           {
             path:"/login",
             element:<Login />
@@ -53,6 +49,11 @@ function App() {
           path:"/profile",
           element:<ProfilePage />,
           loader:profilePageLoader
+        },
+        {
+          path:"/:id",
+          element:<SinglePage />,
+          loader:singlePageLoader
         },
         {
           path:"/profile/update",

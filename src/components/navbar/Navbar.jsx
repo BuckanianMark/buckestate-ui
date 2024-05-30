@@ -18,7 +18,7 @@ return(
                 <img src={Logo} alt="" width="70" />
                 <span>BuckEstate</span>
             </a>
-            <a href="">Home</a>
+            <a href="/">Home</a>
             <a href="">About</a>
             <a href="">Contact</a>
             <a href="">Agents</a>

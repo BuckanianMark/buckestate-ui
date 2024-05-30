@@ -28,8 +28,8 @@ function Slider({images}){
                 
             </div>
             <div className="smallImages">
-                {images.slice(1).map((image,index) => (
-                    <img key={index} src={image} onClick={() => setImageIndex(index + 1)}/>
+                {images.map((image,index) => (
+                    <img key={index} src={image} onClick={() => setImageIndex(index)}/>
                 ))}
             </div>
         </div>
