@@ -2,17 +2,25 @@
 .register{
     display: flex;
     height: 100%;
+    align-items: center;
+    justify-content: center;
     .left{
         flex: 3;
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        @include sm{
+            flex: none;
+        }
         form{
             background-color: #e8b7d4;
             width: 100%;
             padding:100px 50px ;
             border-radius: 10px;
+            @include sm{
+                width: 350px;
 
+            }
             h1{
                 color: #444;
 

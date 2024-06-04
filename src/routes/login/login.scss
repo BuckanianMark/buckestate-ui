@@ -2,6 +2,8 @@
 .login{
     display: flex;
     height: 100%;
+    align-items: center;
+    justify-content: center;
     .left{
         flex: 3;
         display: flex;
@@ -12,7 +14,9 @@
             width: 100%;
             padding:100px 50px ;
             border-radius: 10px;
-
+            @include sm{
+                width:350px;
+            }
             h1{
                 color: #444;
 
