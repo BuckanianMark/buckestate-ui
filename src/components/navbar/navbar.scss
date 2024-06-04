@@ -96,6 +96,9 @@ nav{
         }
         .register{
             background-color: #A5678e;
+            @include sm{
+                width: max-content;
+            }
         }
         .menuIcon{
             display: none;
