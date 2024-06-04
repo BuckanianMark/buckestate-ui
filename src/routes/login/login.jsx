@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import apiRequest from "../../lib/apiRequest"
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
-
+import { toast } from "sonner";
 
 function Login(){
     const [error,setError] = useState("")
@@ -24,11 +24,13 @@ function Login(){
         const res = await apiRequest.post("/auth/login",{
             username,password
           })
+          toast.success("Login Successful")
           updateUser(res.data)
           navigate("/")
       } catch (error) {
         console.log(error)
-        setError(error.response.data.message)
+        toast.error(error.response.data.message)
+        // setError(error.response.data.message)
       }finally{
         setIsLoading(false)
       }

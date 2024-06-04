@@ -52,7 +52,6 @@ function SearchBar(){
                         </label>
                     </div> */}
                 </div>
-                <input type="text" name="city"  placeholder="City/Town Location" onChange={handleChange} />
                 <input type="number" name="minPrice" min={0} max={1000000}  onChange={handleChange}   placeholder="Min Price"/>
                 <input type="number" name="maxPrice" min={0} max={1000000}  onChange={handleChange}  placeholder="Max Price"/>
             <Link className="link" to={`/list?type=${query.type}&city=${query.city}&minPrice=${query.minPrice}&maxPrice=${query.maxPrice}`}>

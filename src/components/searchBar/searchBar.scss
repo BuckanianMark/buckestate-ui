@@ -51,6 +51,10 @@
             }
            
         }
+        @include md{
+            flex-direction: column;
+            border: none;  
+        }
         @include sm{
             flex-direction: column;
             border: none;
@@ -93,7 +97,9 @@
             @include sm{
                 padding: 10px;
             }
-            
+            @include md{
+                padding: 10px;
+            }
             img{
                 width: 30px;
                

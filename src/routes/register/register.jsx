@@ -3,6 +3,7 @@ import Banner from "../../assets/bn.png"
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import apiRequest from "../../lib/apiRequest";
+import { toast } from "sonner";
 function Register(){
     const [error,setError] = useState("")
     const [isLoading,setIsLoading] = useState(false)
@@ -19,11 +20,12 @@ function Register(){
         const res = await apiRequest.post("/auth/register",{
             username,email,password
           })
+          toast.success("Registration Successful")
           console.log(res.data)
           navigate("/login")
       } catch (error) {
         console.log(error)
-        setError(error.response.data.message)
+        toast.error("Failed to register user try again")
       }finally{
         setIsLoading(false)
       }
