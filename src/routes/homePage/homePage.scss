@@ -2,6 +2,10 @@
 .homePage{
     display: flex;
     height: 100%;
+    @include sm{
+        padding-bottom: 50px;
+        overflow-y: scroll;
+    }
     .textContainer{
         flex:3;
         .wrapper{

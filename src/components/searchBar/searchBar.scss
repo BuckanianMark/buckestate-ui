@@ -2,6 +2,7 @@
 .searchBar{
     @include sm{
         margin-bottom: 50px;
+        // overflow-x: scroll;
     }
     .type{     
         button{
