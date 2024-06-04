@@ -52,6 +52,9 @@ nav{
         a{
             padding: 12px 24px;
             margin: 20px;
+            @include sm{
+                padding: 6px 12px;  
+            }
         }
         .user{
             display: flex;

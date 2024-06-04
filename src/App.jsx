@@ -26,12 +26,6 @@ function App() {
             element:<HomePage />
           },
           {
-            path:"/list",
-            element:<ListPage />,
-            loader:listPageLoader
-          },
-          
-          {
             path:"/login",
             element:<Login />
           },
@@ -49,6 +43,11 @@ function App() {
           path:"/profile",
           element:<ProfilePage />,
           loader:profilePageLoader
+        },
+        {
+          path:"/list",
+          element:<ListPage />,
+          loader:listPageLoader
         },
         {
           path:"/rental/:id",
