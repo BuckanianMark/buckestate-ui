@@ -3,6 +3,7 @@ import "./searchBar.scss"
 import searchIcon from "../../assets/search.png"
 import { Link } from "react-router-dom"
 const types = ["buy","rent"]
+const cities = ["Rongai","Ngong","Nairobi"]
 function SearchBar(){
     const [query,setQuery] = useState({
         type:"rent",
@@ -15,6 +16,9 @@ function SearchBar(){
         const handleChange = e => {
             setQuery((prev) => ({...prev,[e.target.name]:e.target.value}))  
         }
+        const handleCityClick = (city) => {
+            setQuery((prev) => ({ ...prev, city }));
+          };
     return(
         <div className="searchBar">
            <div className="type">
@@ -29,7 +33,15 @@ function SearchBar(){
             <form action="">
                 <h2>Choose a location below</h2>
                 <div className="city-div">
-                    <div className="city">
+                    {cities.map((city) => (
+                        <button 
+                        key={city} 
+                        className={query.city === city ? "selected":""}
+                        onClick={() => handleCityClick(city)}>
+                            {city}
+                        </button>
+                    ))}
+                    {/* <div className="city">
                         <label htmlFor="city" className="city-label">
                         <input type="text"  name="city"  value="rongai" readOnly onChange={handleChange} /> 
                         </label>
@@ -38,7 +50,7 @@ function SearchBar(){
                         <label htmlFor="city">
                         <input type="text"  name="city"  value="ngong" readOnly onChange={handleChange} /> 
                         </label>
-                    </div>
+                    </div> */}
                 </div>
                 <input type="text" name="city"  placeholder="City/Town Location" onChange={handleChange} />
                 <input type="number" name="minPrice" min={0} max={1000000}  onChange={handleChange}   placeholder="Min Price"/>
