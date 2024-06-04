@@ -1,5 +1,5 @@
 import { Await, Link, useLoaderData, useNavigate } from "react-router-dom"
-import Chat from "../../components/chat/chat"
+//import Chat from "../../components/chat/chat"
 import List from "../../components/list/list"
 import apiRequest from "../../lib/apiRequest"
 import Avatar from "../../assets/avatar.png"
@@ -66,7 +66,7 @@ function ProfilePage(){
                     </Suspense>
                 </div>
             </div>
-            <div className="chatContainer">
+            {/* <div className="chatContainer">
                 <div className="wrapper">
                 <Suspense fallback={<p>Loading...</p>}>
                         <Await
@@ -77,7 +77,7 @@ function ProfilePage(){
                     </Suspense>
                         
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
