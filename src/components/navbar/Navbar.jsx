@@ -19,11 +19,11 @@ function Navbar(){
 return(
     <nav>
         <div className="left">
-            <a href="" className="logo">
+            <a href="/" className="logo">
                 <img src={Logo} alt="" width="70" />
                 <span>BuckEstate</span>
             </a>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
             <a href="">About</a>
             <a href="">Contact</a>
             <a href="">Agents</a>
@@ -55,7 +55,7 @@ return(
              data-aos="fade-right"
              data-aos-once="true"
               className={open ? "menu active" : "menu"}>
-             <a href="">Home</a>
+             <a href="/">Home</a>
              <a href="">About</a>
              <a href="">Contact</a>
              <a href="">Agents</a>
