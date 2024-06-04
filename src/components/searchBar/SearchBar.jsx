@@ -6,7 +6,7 @@ const types = ["buy","rent"]
 function SearchBar(){
     const [query,setQuery] = useState({
         type:"rent",
-        city:"",
+        city:"Rongai",
         minPrice:0,
         maxPrice:0})
         const switchType = (val) => {
@@ -27,6 +27,19 @@ function SearchBar(){
             ))}
            </div> 
             <form action="">
+                <h2>Choose a location below</h2>
+                <div className="city-div">
+                    <div className="city">
+                        <label htmlFor="city" className="city-label">
+                        <input type="text"  name="city"  value="rongai" readOnly onChange={handleChange} /> 
+                        </label>
+                    </div>
+                    <div className="city">
+                        <label htmlFor="city">
+                        <input type="text"  name="city"  value="ngong" readOnly onChange={handleChange} /> 
+                        </label>
+                    </div>
+                </div>
                 <input type="text" name="city"  placeholder="City/Town Location" onChange={handleChange} />
                 <input type="number" name="minPrice" min={0} max={1000000}  onChange={handleChange}   placeholder="Min Price"/>
                 <input type="number" name="maxPrice" min={0} max={1000000}  onChange={handleChange}  placeholder="Max Price"/>

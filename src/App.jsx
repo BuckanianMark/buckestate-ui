@@ -51,7 +51,7 @@ function App() {
           loader:profilePageLoader
         },
         {
-          path:"/:id",
+          path:"/rental/:id",
           element:<SinglePage />,
           loader:singlePageLoader
         },

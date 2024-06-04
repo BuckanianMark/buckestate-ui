@@ -1,6 +1,17 @@
+@import "../../responseive.scss";
 .listPage{
     display: flex;
     height: 100%;
+    @include md{
+        flex-direction: column;
+        overflow-x: scroll;
+  
+    }
+    @include sm{
+        flex-direction: column;
+        overflow-x: scroll;
+  
+    }
     .listContainer{
      flex: 3;
      .wrapper{
@@ -22,5 +33,11 @@
     flex: 2;
     height: 100%;
     background-color: #fcf5f3;
+    @include md{
+        flex: none;
+     }
+    @include sm{
+       flex: none;
+    }
     }
 }

@@ -11,12 +11,12 @@ function Card({ item }){
     return(
       
        <div className="card">
-            <Link to={`/${item.id}`} className="imageContainer">
+            <Link to={`/rental/${item.id}`} className="imageContainer">
              <img src={item.images[0]} alt="image" />   
             </Link>
             <div className="textContainer">
                 <h2 className="title">
-                    <Link to={`/${item.id}`} >{item.title}</Link>
+                    <Link to={`/rental/${item.id}`}>{item.title}</Link>
                 </h2>
                 <div className="address">
                     <img src={Pin} alt="address"width={40}  />
