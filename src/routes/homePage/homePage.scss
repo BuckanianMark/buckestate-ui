@@ -21,6 +21,8 @@
             }
             @include sm{
                 justify-content: flex-start;
+                // height: 400px;
+                height: 140%;
             }
             .title{
                 font-size: 64px;
