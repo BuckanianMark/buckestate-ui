@@ -31,9 +31,10 @@ return(
         <div className="right">
          {currentUser ? 
             (<div className="user">
-                <img src={currentUser.avatar || Avatar}  alt="" />
+               <Link to={'/profile'}><img src={currentUser.avatar || Avatar}  alt="" />
                 <span> {currentUser.username} </span>
                 <Link to={'/profile'} className="profile">
+                </Link> 
                 <div className="notification">3</div>
                     profile
                 </Link>
