@@ -14,6 +14,7 @@ function SearchBar(){
             setQuery((prev) => ({...prev,type:val}))
         }
         const handleChange = e => {
+            e.prenventDefault()
             setQuery((prev) => ({...prev,[e.target.name]:e.target.value}))  
         }
         const handleCityClick = (city) => {
@@ -31,10 +32,9 @@ function SearchBar(){
                 </button>
             ))}
            </div> 
-            <form action="">
-                <h2>Choose a location below</h2>
-                <div className="city-div">
-                    {cities.map((city) => (
+           <h2>Choose a location below</h2>
+           <div className="city-div">
+           {cities.map((city) => (
                         <button 
                         key={city} 
                         className={query.city === city ? "selected":""}
@@ -42,6 +42,10 @@ function SearchBar(){
                             {city}
                         </button>
                     ))}
+           </div>
+            <form action="">
+                <div className="city-div">
+                 
                     {/* <div className="city">
                         <label htmlFor="city" className="city-label">
                         <input type="text"  name="city"  value="rongai" readOnly onChange={handleChange} /> 

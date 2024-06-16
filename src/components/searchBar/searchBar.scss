@@ -26,6 +26,21 @@
             }
         }
     }
+    .city-div{
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        margin-bottom: 5px;
+        button{
+            padding: 10px 15px;
+            border: none;
+            &.selected{
+                background-color: #A5678e; 
+            }
+        }
+       
+    }
     form{
         border: 1px solid #999;
         display: flex;
