@@ -41,8 +41,9 @@ return(
             </div>) 
              : 
             (<>
-            <a href="/login">Sign In</a>
-            <a href="/register" className="register">Sign Up</a></>)}
+            <Link to="/login">Sign In</Link>
+            <Link to="/register" className="register">Sign Up</Link>
+            </>)}
            
             <div className="menuIcon">
                 {open ? <><img src={Close} alt="" width="50" onClick={handleClose} /></> 
@@ -59,7 +60,7 @@ return(
              <a href="">About</a>
              <a href="">Contact</a>
              <a href="">Agents</a>
-             <a href="/login">Sign In</a>
+             <Link to="/login">Sign In</Link>
              </div>
             )}
            
