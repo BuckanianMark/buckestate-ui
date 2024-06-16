@@ -125,6 +125,7 @@ nav{
             align-items: center;
             justify-content: center;
             font-size: 21px;
+            z-index: 999;
             &.active{
                 right: 0;
             }
