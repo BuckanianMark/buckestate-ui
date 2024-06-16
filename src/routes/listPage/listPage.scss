@@ -9,8 +9,8 @@
     }
     @include sm{
         flex-direction: column;
-        overflow-x: scroll;
-  
+        overflow-x: scroll;    
+        margin-bottom: 50%;
     }
     .listContainer{
      flex: 3;
@@ -38,6 +38,8 @@
      }
     @include sm{
        flex: none;
+       height:600px ;
+
     }
     }
 }

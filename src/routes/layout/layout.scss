@@ -17,6 +17,9 @@
     }
     @include sm{
         max-width: 640px;
+        .content{
+            margin-bottom: 40%;
+        }
     }
     .content{
        height: calc(100vh - 100px);
