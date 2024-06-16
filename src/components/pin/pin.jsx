@@ -16,7 +16,7 @@ function Pin({item}){
 
     // console.log(item)
     return(
-        <Marker position={[item.latitude,item.longitude]} icon={markerIcon}>
+        <Marker position={[item.latitude,item.longitude]} >
         <Popup>
          <div className="popupContainer">
             <img src={item.images[0]} alt="rental-image" />
