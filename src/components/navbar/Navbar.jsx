@@ -30,18 +30,15 @@ return(
         </div>
         <div className="right">
          {currentUser ? 
-            (<div className="user">
-               <Link to={'/profile'}>
+            (<Link to={'/profile'} className="user">     
                <img src={currentUser.avatar || Avatar}  alt="" />
                 <span> {currentUser.username} </span>
-                </Link> 
-                <Link to={'/profile'} className="profile">
-               
-                <div className="notification">3</div>
-                    profile
-                </Link>
                 
-            </div>) 
+                <div  className="profile">     
+                    profile
+                </div>
+                
+            </Link>) 
              : 
             (<>
             <Link to="/login">Sign In</Link>

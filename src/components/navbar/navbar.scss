@@ -79,6 +79,9 @@ nav{
                 cursor: pointer;
                 border: none;
                 position: relative;
+                @include sm{
+                    display: none;
+                }
                 .notification{
                     position: absolute;
                     background-color: red;
